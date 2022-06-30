@@ -5,7 +5,7 @@
     --accent: #2196f3;
     --white: #ffffff;
     --text: ##212121;
-    --text-sec: ##757575;
+    --text-sec: rgba(117, 117, 117, 1);;
     --tagline-bg: #2F303A;
     --team-bg: #F5F4FA;
 
@@ -54,7 +54,7 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: black;
     margin-right: 93px;
@@ -115,7 +115,7 @@ img {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.35;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -147,7 +147,7 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -158,38 +158,34 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
 .metier-name, .team-name {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 .team-section{
     background-color: var(--team-bg);
+    padding-top: 94px;
 }
 
 .team-member {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-}
-.member-job {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
 .footer {
     background-color: var(--tagline-bg);
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     color: var(--white);
@@ -202,9 +198,8 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-bottom: 60px;
 }
 .footer-mail, .footer-tel {
     color: rgba(255, 255, 255, 0.6);
@@ -232,7 +227,7 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     border-radius: 4px;
@@ -250,7 +245,6 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
     letter-spacing: 0.06em;
     line-height: 2.00;
     margin-bottom: 4px;
@@ -258,7 +252,7 @@ img {
 }
 .project-type {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-sec);
 }
@@ -286,6 +280,10 @@ img {
     flex-wrap: wrap;
 }
 
+.projects-ulka:not(:last-child) {
+    margin-bottom: 15px;
+}
+
 .project-card {
     display: flex;
     flex-wrap: wrap;
@@ -308,7 +306,7 @@ img {
 }
 
 .projects-section {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 /* Блочна модель, flex-box */
 .container {
@@ -350,7 +348,7 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .contacts-ulka {
@@ -382,13 +380,17 @@ img {
 .advant-li {
     width: 270px;
 }
+
+.metier-section {
+    padding-bottom: 94px;
+}
+
 .geometry {
     margin-bottom: 50px;
 }
 
 .metier-ulka {
     display: flex;
-    margin-bottom: 94px;
 }
 .metier-li:last-child {
     margin-right: 0px;
